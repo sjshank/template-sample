@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IGC Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/jquery-min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-static-top app-navbar">
+            <div class="header-container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-th color-turquoise"></span></a>
+                </div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">J.P.Morgan</a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#">
+                                <span class="fa fa-home color-turquoise"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <span class="fa fa-pencil color-turquoise"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <span class="fa fa-desktop color-turquoise"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                        </li>
+                    </ul>
+                    <!--<div class="nav navbar-nav search-div">
+                    <form>
+                        <span class="search-btn-span" style="float: left">
+                        <button class="search-btn" type="submit" >
+                            <span class="glyphicon glyphicon-search color-Gray88"></span>
+                        </button>
+                        </span>
+                        <input type="search" placeholder="search" class="form-control search-box" id="search">
+                        <span class="search-btn-span">
+                        <button class="search-btn" type="submit" >
+                            <span class="glyphicon glyphicon-search color-Gray88"></span>
+                        </button>
+                    </span>
+                    </form>
+                </div>-->
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <input type="search" placeholder="search" class="form-control search-box" id="search">
+
+                            <button class="search-btn float-right" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                            <div class="clear:both"></div>
+                        </div>
+                        <div class="col-lg-2 no-padding">
+                            <ul class="nav navbar-nav navbar-right float-left">
+                                <li class="dropdown">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-envelope color-turquoise"></span>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell color-turquoise"></span>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-user color-turquoise"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear:both"></div>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="navbar navbar-fixed-left navbar-left-side">
+            <ul id="folder-nav" class="nav navbar-nav">
+
+                <li class="folder-menu-item" id="folder-0">
+                    <a href="#"><span class="icomoon icon-meter color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-1">
+                    <a href="#"><span class="icomoon icon-filter-2 color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-2">
+                    <a href="#"><span class="glyphicon glyphicon-warning-sign color-white"></span></a>
+                </li>
+                <br>
+
+                <li class="folder-menu-item" id="folder-3">
+                    <a href="#"><span class="fa fa fa-history color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-5">
+                    <a href="#"><span class="fa fa-sliders color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-6">
+                    <a href="#"><span class="fa fa-sitemap color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-7">
+                    <a href="#"><span class="fa fa-pie-chart color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-8">
+                    <a href="#"><span class="glyphicon glyphicon-repeat color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-9">
+                    <a href="#"><span class="fa fa-archive color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-10">
+                    <a href="#"><span class="fa fa-database color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-11">
+                    <a href="#"><span class="fa fa-cube color-white"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-12">
+                    <a href="#"><span class="glyphicon glyphicon-option-vertical color-gold"></span></a>
+                </li>
+                <br>
+                <li class="folder-menu-item" id="folder-13">
+                    <a href="#"><span class="fa fa-angle-double-right color-turquoise"></span></a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="side-by-side-container">
+            <div id="code-container-left" class="container code-container">
+                <pre class="line-numbers  language-typescript"><code id="inner-code-left" class="  language-typescript"><span class="token comment" spellcheck="true">/// &lt;reference path="../_external/typings/node/node.d.ts" /&gt;</span>
+
+<span class="token keyword">import</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span>request<span class="token punctuation">:</span> http<span class="token punctuation">.</span>IncomingMessage<span class="token punctuation">,</span> response<span class="token punctuation">:</span> http<span class="token punctuation">.</span>ServerResponse<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">"Don't Panic"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+            </div>
+            <div id="code-container-right" class="container code-container">
+                <pre class="line-numbers  language-go"><code id="inner-code-right" class=" language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">"fmt"</span>
+	<span class="token string">"net/http"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">handler</span><span class="token punctuation">(</span>w http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span> r <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> <span class="token string">"Don't Panic"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	http<span class="token punctuation">.</span><span class="token function">HandleFunc</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+	http<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token string">"localhost:8080"</span><span class="token punctuation">,</span> <span class="token boolean">nil</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+            </div>
+        </div>
+
+        <div class="side-by-side-container">
+            <div id="code-container-left" class="container code-container">
+                <pre class="line-numbers  language-typescript"><code id="inner-code-left" class="  language-typescript"><span class="token comment" spellcheck="true">/// &lt;reference path="../_external/typings/node/node.d.ts" /&gt;</span>
+
+<span class="token keyword">import</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span>request<span class="token punctuation">:</span> http<span class="token punctuation">.</span>IncomingMessage<span class="token punctuation">,</span> response<span class="token punctuation">:</span> http<span class="token punctuation">.</span>ServerResponse<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">"Don't Panic"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+            </div>
+            <div id="code-container-right" class="container code-container">
+                <pre class="line-numbers  language-go"><code id="inner-code-right" class=" language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">"fmt"</span>
+	<span class="token string">"net/http"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">handler</span><span class="token punctuation">(</span>w http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span> r <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> <span class="token string">"Don't Panic"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	http<span class="token punctuation">.</span><span class="token function">HandleFunc</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span> handler<span class="token punctuation">)</span>
+	http<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token string">"localhost:8080"</span><span class="token punctuation">,</span> <span class="token boolean">nil</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+            </div>
+        </div>
+
+    </div>
+<div class="clear:both !important;"></div>
+
+
+    <footer id="footer">
+     <div id="footer-div">   
+        <div class="">
+            <span>Powered by <img src="images/ibm_logo.png" class="img" /> Infosphere Goverance Catalog</span>
+        </div>
+     </div>
+    </footer>
+
+
+
+</body>
+
+</html>
