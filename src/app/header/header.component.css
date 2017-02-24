@@ -1,0 +1,68 @@
+.app-navbar {
+  background-color: #162931;
+  border-color: #162931;
+  border-radius: 0px;
+}
+.app-navbar .navbar-header .app-logo {
+  width: 175px;
+  height: 42px;
+  margin-top: -6px;
+}
+.app-navbar .collapse button.search-btn {
+  min-height: 50px;
+  background-color: #162931;
+  border-color: #162931;
+  border-radius: 0px;
+}
+.app-navbar .collapse input.search-input {
+  min-height: 48px;
+  font-size: 20px;
+  border-radius: 0px;
+  background-color: #162931;
+  border-color: #162931;
+  color: #fff;
+  box-shadow: none !important;
+}
+.app-navbar .collapse .search-form {
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+.app-navbar .collapse ul .bell-logo {
+  padding-top: 5px;
+}
+.app-navbar .collapse ul .user-logo {
+  padding-right: 20px;
+  padding-left: 14px;
+  padding-top: 12px;
+}
+.app-navbar .collapse ul .user-logo .user-logo-img {
+  width: 40px;
+  height: 35px;
+}
+#collapseOne {
+  position: absolute !important;
+  z-index: 20;
+  width: 250px;
+  overflow: hidden;
+  background-color: #244a61;
+  margin-top: -20px;
+  min-height: 810px;
+}
+#collapseOne ul li.active a {
+  color: #3cd6c6 !important;
+  background-color: transparent !important;
+}
+#collapseOne ul li {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+#collapseOne ul li a {
+  color: #fff;
+}
+#collapseOne ul li a:hover,
+#collapseOne ul li a:visited {
+  background-color: #3cd6c6;
+}
+#collapseOne ul li a:hover {
+  color: #000000;
+}

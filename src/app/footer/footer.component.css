@@ -1,0 +1,13 @@
+footer .footer-div {
+  background: #162931;
+  text-align: right;
+  padding: 12px 44px;
+}
+footer .footer-div p {
+  color: #fff;
+  margin: 0 !important;
+}
+footer .footer-div p img.ibm-logo {
+  padding-left: 10px;
+  padding-right: 10px;
+}

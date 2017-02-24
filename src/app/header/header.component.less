@@ -1,0 +1,119 @@
+.setBorderRadius(@rad) {
+    border-radius: @rad;
+}
+
+.setWidth(@width) {
+    width: @width;
+}
+
+.setMarginTop(@top) {
+    margin-top: @top;
+}
+
+.setMarginBottom(@btm) {
+    margin-bottom: @btm;
+}
+
+.setMarginLeft(@lft) {
+    margin-left: @lft;
+}
+
+.setMarginRight(@rgt) {
+    margin-right: @rgt;
+}
+
+.setPaddingRight(@rgt) {
+    padding-right: @rgt;
+}
+.setPaddingBottom(@rgt) {
+    padding-bottom: @rgt;
+}
+.setPaddingLeft(@rgt) {
+    padding-left: @rgt;
+}
+.setPaddingTop(@rgt) {
+    padding-top: @rgt;
+}
+.setBckgrdColr(@color) {
+    background-color: @color;
+}
+
+.setBrdrColr(@color) {
+    border-color: @color;
+}
+
+.app-navbar {
+    .setBckgrdColr(rgba(22, 41, 49, 1));
+    .setBrdrColr(rgba(22, 41, 49, 1));
+    .setBorderRadius(0px);
+    .navbar-header {
+        .app-logo {
+            .setWidth(175px);
+            height: 42px;
+            .setMarginTop(-6px);
+        }
+    }
+    .collapse {
+        button.search-btn {
+            min-height: 50px;
+            .setBckgrdColr(rgba(22, 41, 49, 1));
+            .setBrdrColr(rgba(22, 41, 49, 1));
+            .setBorderRadius(0px);
+        }
+        input.search-input {
+            min-height: 48px;
+            font-size: 20px;
+            .setBorderRadius(0px);
+            .setBckgrdColr(rgba(22, 41, 49, 1));
+            .setBrdrColr(rgba(22, 41, 49, 1));
+            color: #fff;
+            box-shadow: none !important;
+        }
+        .search-form {
+            .setMarginTop(5px);
+            .setMarginBottom(4px);
+        }
+        ul {
+            .bell-logo {
+                .setPaddingTop(5px);
+            }
+            .user-logo {
+                .setPaddingRight(20px);       
+                .setPaddingLeft(14px);
+                .setPaddingTop(12px);
+                .user-logo-img {
+                    .setWidth(40px);
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+#collapseOne
+{
+  position: absolute !important;
+  z-index: 20;
+  width: 250px;
+  overflow:hidden;
+  background-color:#244a61;
+  margin-top: -20px;
+  min-height: 810px;
+  ul li.active a{
+      color:#3cd6c6 !important;
+      background-color: transparent !important;
+  }
+  ul li{
+      padding-bottom: 5px;
+      cursor:pointer;
+      a{
+          color: #fff;
+      }
+      a:hover, a:visited{
+          background-color: #3cd6c6;
+      }
+      a:hover{
+           color: #000000;
+      }
+  }
+}
