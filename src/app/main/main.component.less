@@ -1,32 +1,74 @@
+.setBorderRadius(@rad) {
+    border-radius: @rad;
+}
+
+.setWidth(@width) {
+    width: @width;
+}
+
+.setMarginTop(@top) {
+    margin-top: @top;
+}
+
+.setMarginBottom(@btm) {
+    margin-bottom: @btm;
+}
+
+.setMarginLeft(@lft) {
+    margin-left: @lft;
+}
+
+.setMarginRight(@rgt) {
+    margin-right: @rgt;
+}
+
+.setPaddingRight(@rgt) {
+    padding-right: @rgt;
+}
+.setPaddingBottom(@rgt) {
+    padding-bottom: @rgt;
+}
+.setPaddingLeft(@rgt) {
+    padding-left: @rgt;
+}
+.setPaddingTop(@rgt) {
+    padding-top: @rgt;
+}
+.setBckgrdColr(@color) {
+    background-color: @color;
+}
+
+.setBrdrColr(@color) {
+    border-color: @color;
+}
+
+.padding-top-5px{
+    .setPaddingTop(5px);
+}
 .main-container {
-    padding-left: 30px;
-    padding-right: 12px;
+    .setPaddingRight(12px);
+    .setPaddingLeft(30px);
 }
 
-a {
-    cursor: pointer;
-}
-
-.activity-div,
-.assets-div {
-    background-color: #fff;
+.igc-div {
+    .setBckgrdColr(#fff);
     border-top-color: #3cd6c6 !important;
     border-width: 2px;
     border: 2px solid;
     border-bottom-color: #fff;
     border-left-color: #fff;
     border-right-color: #fff;
-    min-height: 250px;
-    max-height: 250px;
+    height: 250px;
     h4 {
         color: #777777;
         font-weight: bold;
+        .setPaddingLeft(8px);
     }
     .subscription-list {
         list-style: none;
-        padding-left: 18px;
+        .setPaddingLeft(22px);
         li {
-            padding-bottom: 2px;
+            .setPaddingBottom(4px);
         }
         a {
             color: #FF1493 !important;
@@ -34,36 +76,44 @@ a {
         }
     }
     .queries-list {
-        padding-left: 35px;
+    .setPaddingLeft(40px);
         li {
             color: #777777;
-            padding-bottom: 2px;
+            .setPaddingBottom(4px);
         }
     }
     .workflow-img {
         height: 205px;
-        width: 335px;
+        .setWidth(335px);
     }
     .collection-img,
     .steward-img,
     .collaboration-img {
         height: 205px;
-        width: 335px;
-        padding-left: 6px;
+        .setWidth(335px);
+        .setPaddingLeft(10px);
+    }
+    div.pull-left{
+        .setPaddingLeft(4px);
+        .setPaddingTop(12px);
     }
 }
 
 #myCarousel {
-    max-width: 98%;
+    max-width: 97%;
+    .carousel-inner{
+        .setWidth(96.5%);
+    }
     .carousel-inner>.item>img,
     .carousel-inner>.item>a>img {
-        width: 70%;
+        .setWidth(70%);
         margin: auto;
     }
     .carousel-left {
         background-image: none;
         float: left;
         top: 50%;
+        .setMarginLeft(-15px);
     }
     .carousel-right {
         background-image: none;
@@ -71,15 +121,15 @@ a {
         top: 50%;
     }
     .news-content {
-        padding-left: 30px;
-        padding-right: 30px;
+        .setPaddingLeft(10px);
+        .setPaddingRight(30px);
     }
 }
 
 table {
-    width: 85%;
+    .setWidth(85%);
     max-width: 90%;
-    margin-left: 24px;
+    .setMarginLeft(28px);
     td {
         a {
             color: #FF1493 !important;
@@ -91,20 +141,27 @@ table {
 .activity-pagination {
     .pagination {
         margin: 0;
-        li a.page-link {
+        li {
+            a {
             color: #FF1493 !important;
+            }
+            a:visited,a:active{
+                color: #000000;
+            }
         }
+
     }
 }
 
-.button-well {
+.sidebar-button {
     text-align: center;
     min-height: 20px;
     height: 790px;
     max-height: 800px;
     padding: 2px;
     margin-bottom: 20px;
-    background-color: rgba(36, 74, 97, 1);
+    .setBckgrdColr(rgba(36, 74, 97, 1));
+    border: none;
     border-radius: 0px;
     a,
     a:hover,
@@ -112,39 +169,58 @@ table {
     a:active {
         background-color: transparent;
     }
-    .custom-ul {
-        background-color: #3cd6c6 !important;
-        margin-left: -2px;
+    .button-ul {
+        .setBckgrdColr(#3cd6c6) !important;
+        .setMarginLeft(-2px);
         margin-top: -2px;
-        padding-right: 10px;
+        .setPaddingRight(10px);
         height: 790px;
         max-height: 792px;
         li {
             img {
-                padding-top: 320px;
-                padding-left: 10px;
+                .setPaddingTop(320px);
             }
+        }
+    }
+    .resize-logo-li{
+        .setPaddingTop(115px);
+        a{
+            border-top: 1px solid #3cd6c6 !important;
         }
     }
 }
 
- #sidebar-section .collapse.in{
-     -webkit-transition: width 2s ease;
-    -moz-transition: width 2s ease;
-    -o-transition: width 2s ease;
-    transition: width 2s ease;
-    
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    background: yellow;
-    vertical-align: middle;
-    line-height: 30px;
+ #sidebar-section {
+     .setPaddingRight(0px);
+ 
+ .collapse.width {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.15s ease;
+  -moz-transition: width 0.15s ease;
+  -o-transition: width 0.15s ease;
+  transition: width 0.15s ease;
+}
+ .sidebar-button{
+     .side-menu-img{
+         margin-top: 360px;
+     }
+ }
+    #sidebar-collapse{
+        position:relative;
+        .setWidth(78%);
+    }
+    .open-side-bar, .close-side-bar{
+        position:relative;
+        .setWidth(22%);
+    }
+    .back-logo{
+        .setWidth(40px);
+        height: 40px;
+    }
+    ul li{
+        .setPaddingBottom(6px);
+    }
 }
 
 
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */

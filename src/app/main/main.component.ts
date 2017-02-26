@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-body',
@@ -8,5 +7,19 @@ import * as $ from 'jquery';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-    //$('#open-toggle').css("display", "none");
+  expandSideBar: boolean = false;
+  moreOptn: boolean = false;
+  switchBtn: boolean = false;
+
+      toggleSideBarBtn(){
+        this.expandSideBar = !this.expandSideBar;
+      }    
+
+      toggleOption(){
+        this.moreOptn = !this.moreOptn;
+      }
+
+      toggleSwitch(){
+        this.switchBtn = !this.switchBtn;
+      }
 }

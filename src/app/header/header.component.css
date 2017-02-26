@@ -39,30 +39,59 @@
   width: 40px;
   height: 35px;
 }
-#collapseOne {
+#side-menu-bar,
+#alert-info-bar,
+#user-info-bar {
   position: absolute !important;
   z-index: 20;
   width: 250px;
   overflow: hidden;
   background-color: #244a61;
   margin-top: -20px;
-  min-height: 810px;
 }
-#collapseOne ul li.active a {
+#side-menu-bar ul li.active a,
+#alert-info-bar ul li.active a,
+#user-info-bar ul li.active a {
   color: #3cd6c6 !important;
   background-color: transparent !important;
 }
-#collapseOne ul li {
+#side-menu-bar ul li,
+#alert-info-bar ul li,
+#user-info-bar ul li {
   padding-bottom: 5px;
   cursor: pointer;
 }
-#collapseOne ul li a {
+#side-menu-bar ul li a,
+#alert-info-bar ul li a,
+#user-info-bar ul li a {
   color: #fff;
 }
-#collapseOne ul li a:hover,
-#collapseOne ul li a:visited {
+#side-menu-bar ul li a:hover,
+#alert-info-bar ul li a:hover,
+#user-info-bar ul li a:hover,
+#side-menu-bar ul li a:visited,
+#alert-info-bar ul li a:visited,
+#user-info-bar ul li a:visited {
   background-color: #3cd6c6;
 }
-#collapseOne ul li a:hover {
+#side-menu-bar ul li a:hover,
+#alert-info-bar ul li a:hover,
+#user-info-bar ul li a:hover {
   color: #000000;
+}
+#side-menu-bar {
+  min-height: 810px;
+}
+#alert-info-bar,
+#user-info-bar {
+  right: 0;
+  width: 160px;
+}
+#alert-info-bar ul li a,
+#user-info-bar ul li a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+#user-info-bar .logout-link a {
+  border-top: 1px solid #fff !important;
 }

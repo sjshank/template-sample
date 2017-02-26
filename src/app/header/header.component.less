@@ -90,7 +90,7 @@
     }
 }
 
-#collapseOne
+#side-menu-bar, #alert-info-bar, #user-info-bar
 {
   position: absolute !important;
   z-index: 20;
@@ -98,13 +98,12 @@
   overflow:hidden;
   background-color:#244a61;
   margin-top: -20px;
-  min-height: 810px;
   ul li.active a{
       color:#3cd6c6 !important;
       background-color: transparent !important;
   }
   ul li{
-      padding-bottom: 5px;
+      .setPaddingBottom(5px);
       cursor:pointer;
       a{
           color: #fff;
@@ -116,4 +115,22 @@
            color: #000000;
       }
   }
+}
+#side-menu-bar{
+  min-height: 810px;
+}
+#alert-info-bar, #user-info-bar{
+    right: 0;
+    .setWidth(160px);
+    ul li a{
+        .setPaddingTop(4px);
+        .setPaddingBottom(4px);
+    }
+}
+#user-info-bar{
+    .logout-link{
+        a{
+            border-top: 1px solid #fff !important;
+        }
+    }
 }

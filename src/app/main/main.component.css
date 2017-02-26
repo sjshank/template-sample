@@ -1,12 +1,11 @@
+.padding-top-5px {
+  padding-top: 5px;
+}
 .main-container {
-  padding-left: 30px;
   padding-right: 12px;
+  padding-left: 30px;
 }
-a {
-  cursor: pointer;
-}
-.activity-div,
-.assets-div {
+.igc-div {
   background-color: #fff;
   border-top-color: #3cd6c6 !important;
   border-width: 2px;
@@ -14,54 +13,51 @@ a {
   border-bottom-color: #fff;
   border-left-color: #fff;
   border-right-color: #fff;
-  min-height: 250px;
-  max-height: 250px;
+  height: 250px;
 }
-.activity-div h4,
-.assets-div h4 {
+.igc-div h4 {
   color: #777777;
   font-weight: bold;
+  padding-left: 8px;
 }
-.activity-div .subscription-list,
-.assets-div .subscription-list {
+.igc-div .subscription-list {
   list-style: none;
-  padding-left: 18px;
+  padding-left: 22px;
 }
-.activity-div .subscription-list li,
-.assets-div .subscription-list li {
-  padding-bottom: 2px;
+.igc-div .subscription-list li {
+  padding-bottom: 4px;
 }
-.activity-div .subscription-list a,
-.assets-div .subscription-list a {
+.igc-div .subscription-list a {
   color: #FF1493 !important;
   text-decoration: none;
 }
-.activity-div .queries-list,
-.assets-div .queries-list {
-  padding-left: 35px;
+.igc-div .queries-list {
+  padding-left: 40px;
 }
-.activity-div .queries-list li,
-.assets-div .queries-list li {
+.igc-div .queries-list li {
   color: #777777;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
 }
-.activity-div .workflow-img,
-.assets-div .workflow-img {
+.igc-div .workflow-img {
   height: 205px;
   width: 335px;
 }
-.activity-div .collection-img,
-.assets-div .collection-img,
-.activity-div .steward-img,
-.assets-div .steward-img,
-.activity-div .collaboration-img,
-.assets-div .collaboration-img {
+.igc-div .collection-img,
+.igc-div .steward-img,
+.igc-div .collaboration-img {
   height: 205px;
   width: 335px;
-  padding-left: 6px;
+  padding-left: 10px;
+}
+.igc-div div.pull-left {
+  padding-left: 4px;
+  padding-top: 12px;
 }
 #myCarousel {
-  max-width: 98%;
+  max-width: 97%;
+}
+#myCarousel .carousel-inner {
+  width: 96.5%;
 }
 #myCarousel .carousel-inner > .item > img,
 #myCarousel .carousel-inner > .item > a > img {
@@ -72,6 +68,7 @@ a {
   background-image: none;
   float: left;
   top: 50%;
+  margin-left: -15px;
 }
 #myCarousel .carousel-right {
   background-image: none;
@@ -79,13 +76,13 @@ a {
   top: 50%;
 }
 #myCarousel .news-content {
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 30px;
 }
 table {
   width: 85%;
   max-width: 90%;
-  margin-left: 24px;
+  margin-left: 28px;
 }
 table td a {
   color: #FF1493 !important;
@@ -94,10 +91,14 @@ table td a {
 .activity-pagination .pagination {
   margin: 0;
 }
-.activity-pagination .pagination li a.page-link {
+.activity-pagination .pagination li a {
   color: #FF1493 !important;
 }
-.button-well {
+.activity-pagination .pagination li a:visited,
+.activity-pagination .pagination li a:active {
+  color: #000000;
+}
+.sidebar-button {
   text-align: center;
   min-height: 20px;
   height: 790px;
@@ -105,15 +106,16 @@ table td a {
   padding: 2px;
   margin-bottom: 20px;
   background-color: #244a61;
+  border: none;
   border-radius: 0px;
 }
-.button-well a,
-.button-well a:hover,
-.button-well a:visited,
-.button-well a:active {
+.sidebar-button a,
+.sidebar-button a:hover,
+.sidebar-button a:visited,
+.sidebar-button a:active {
   background-color: transparent;
 }
-.button-well .custom-ul {
+.sidebar-button .button-ul {
   background-color: #3cd6c6 !important;
   margin-left: -2px;
   margin-top: -2px;
@@ -121,24 +123,42 @@ table td a {
   height: 790px;
   max-height: 792px;
 }
-.button-well .custom-ul li img {
+.sidebar-button .button-ul li img {
   padding-top: 320px;
-  padding-left: 10px;
 }
-#sidebar-section .collapse.in {
-  -webkit-transition: width 2s ease;
-  -moz-transition: width 2s ease;
-  -o-transition: width 2s ease;
-  transition: width 2s ease;
-  display: inline-block;
+.sidebar-button .resize-logo-li {
+  padding-top: 115px;
+}
+.sidebar-button .resize-logo-li a {
+  border-top: 1px solid #3cd6c6 !important;
+}
+#sidebar-section {
+  padding-right: 0px;
+}
+#sidebar-section .collapse.width {
+  position: relative;
   overflow: hidden;
-  white-space: nowrap;
-  background: yellow;
-  vertical-align: middle;
-  line-height: 30px;
+  -webkit-transition: width 0.15s ease;
+  -moz-transition: width 0.15s ease;
+  -o-transition: width 0.15s ease;
+  transition: width 0.15s ease;
 }
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+#sidebar-section .sidebar-button .side-menu-img {
+  margin-top: 360px;
+}
+#sidebar-section #sidebar-collapse {
+  position: relative;
+  width: 78%;
+}
+#sidebar-section .open-side-bar,
+#sidebar-section .close-side-bar {
+  position: relative;
+  width: 22%;
+}
+#sidebar-section .back-logo {
+  width: 40px;
+  height: 40px;
+}
+#sidebar-section ul li {
+  padding-bottom: 6px;
+}
