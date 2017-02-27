@@ -9,5 +9,14 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent {
   
+  activeUInfo: boolean = false;
+  activeAlert: boolean = false;
+
+  toggleUInfo(){
+    this.activeUInfo = !this.activeUInfo;
+  }
+  toggleAlert(){
+    this.activeAlert = !this.activeAlert;
+  }
   
 }

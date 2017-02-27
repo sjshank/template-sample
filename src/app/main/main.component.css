@@ -132,6 +132,9 @@ table td a {
 .sidebar-button .resize-logo-li a {
   border-top: 1px solid #3cd6c6 !important;
 }
+.pointer-cursor {
+  cursor: pointer;
+}
 #sidebar-section {
   padding-right: 0px;
 }

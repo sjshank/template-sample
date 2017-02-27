@@ -1,4 +1,5 @@
 .app-navbar {
+  min-height: 66px;
   background-color: #162931;
   border-color: #162931;
   border-radius: 0px;
@@ -15,20 +16,22 @@
   border-radius: 0px;
 }
 .app-navbar .collapse input.search-input {
-  min-height: 48px;
+  min-height: 50px;
   font-size: 20px;
   border-radius: 0px;
   background-color: #162931;
   border-color: #162931;
+  background: url("assets/images/arrow-down.png") no-repeat scroll left center;
   color: #fff;
   box-shadow: none !important;
+  padding-left: 30px;
 }
 .app-navbar .collapse .search-form {
   margin-top: 5px;
   margin-bottom: 4px;
 }
-.app-navbar .collapse ul .bell-logo {
-  padding-top: 5px;
+.app-navbar .collapse ul li a.bell-logo {
+  line-height: 32px;
 }
 .app-navbar .collapse ul .user-logo {
   padding-right: 20px;
@@ -38,6 +41,12 @@
 .app-navbar .collapse ul .user-logo .user-logo-img {
   width: 40px;
   height: 35px;
+}
+.app-navbar .collapse .active-accordion {
+  border: 2px solid #3cd6c6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 #side-menu-bar,
 #alert-info-bar,

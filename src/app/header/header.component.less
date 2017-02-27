@@ -43,6 +43,7 @@
 }
 
 .app-navbar {
+    min-height: 66px;
     .setBckgrdColr(rgba(22, 41, 49, 1));
     .setBrdrColr(rgba(22, 41, 49, 1));
     .setBorderRadius(0px);
@@ -61,21 +62,25 @@
             .setBorderRadius(0px);
         }
         input.search-input {
-            min-height: 48px;
+            min-height: 50px;
             font-size: 20px;
             .setBorderRadius(0px);
             .setBckgrdColr(rgba(22, 41, 49, 1));
             .setBrdrColr(rgba(22, 41, 49, 1));
+            background: url("assets/images/arrow-down.png") no-repeat scroll left center;
             color: #fff;
             box-shadow: none !important;
+            .setPaddingLeft(30px);
         }
         .search-form {
             .setMarginTop(5px);
             .setMarginBottom(4px);
         }
         ul {
-            .bell-logo {
-                .setPaddingTop(5px);
+            li {
+                a.bell-logo{
+                    line-height: 32px;
+                }
             }
             .user-logo {
                 .setPaddingRight(20px);       
@@ -86,6 +91,12 @@
                     height: 35px;
                 }
             }
+        }
+        .active-accordion{
+            border: 2px solid #3cd6c6;
+            border-top: none;
+            border-left: none;
+            border-right: none;
         }
     }
 }

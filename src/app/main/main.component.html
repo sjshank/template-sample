@@ -340,17 +340,17 @@
         </div>
       </div>
       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" id="sidebar-section">
-        <div *ngIf="!expandSideBar" class="sidebar-nav-fixed pull-right affix open-side-bar">
+        <div *ngIf="!expandSideBar" (click)="toggleSideBarBtn()" class="pointer-cursor sidebar-nav-fixed pull-right affix open-side-bar">
           <div class="well sidebar-button" style="background-color: #3cd6c6 !important;">
-            <a >
-                <img src="assets/images/side-menu-expand.png" (click)="toggleSideBarBtn()" class="side-menu-img"/>
+            <a>
+                <img src="assets/images/side-menu-expand.png" class="side-menu-img"/>
               </a>
           </div>
         </div>
-        <div *ngIf="expandSideBar" class="sidebar-nav-fixed pull-left affix close-side-bar">
+        <div *ngIf="expandSideBar" (click)="toggleSideBarBtn()" class="pointer-cursor sidebar-nav-fixed pull-left affix close-side-bar">
           <div class="well sidebar-button" style="background-color: #3cd6c6 !important;">
             <a >
-                <img src="assets/images/side-menu-collapse.png" (click)="toggleSideBarBtn()" class="side-menu-img"/>
+                <img src="assets/images/side-menu-collapse.png" class="side-menu-img"/>
               </a>
           </div>
         </div>
@@ -412,8 +412,8 @@
                 <img src="assets/images/ie-logo.png"/>
               </a>
               </li>
-              <li class="active"><a href="#">
-                <img src="assets/images/vertical-dots.png" (click)="toggleOption()"/>
+              <li class="active" (click)="toggleOption()"><a  href="#">
+                <img src="assets/images/vertical-dots.png" />
               </a>
               </li>
               <li class="resize-logo-li">
@@ -458,8 +458,8 @@
                 <img  src="assets/images/add-logo.png"/>
               </a>
               </li>
-              <li class="active"><a href="#">
-                <img class="back-logo" src="assets/images/back-logo.png" (click)="toggleOption()"/>
+              <li class="active" (click)="toggleOption()"><a href="#">
+                <img class="back-logo" src="assets/images/back-logo.png" />
               </a>
               </li>
             </ul>

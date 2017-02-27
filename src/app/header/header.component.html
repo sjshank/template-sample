@@ -34,35 +34,24 @@
         </div>
       </form>
     </div>
-
     <div id="info-accordion">
-    <ul class="nav navbar-nav pull-right" >
-      <li class="bell-logo">
-        <a class="accordion-toggle" href="#alert-info-bar" data-toggle="collapse" data-parent="#info-accordion">
-          <img src="assets/images/bell-logo.png">
-        </a>
-      </li>
-      <li class="">
-        <a class="user-logo accordion-toggle" href="#user-info-bar" data-toggle="collapse" data-parent="#info-accordion">
-          <img src="assets/images/user-logo.png" class="user-logo-img">
-        </a>
-      </li>
-    </ul>
+      <ul class="nav navbar-nav pull-right">
+        <li>
+          <a [ngClass]="{'active-accordion': activeAlert}" class="bell-logo accordion-toggle" (click)="toggleAlert()" href="#alert-info-bar"
+            data-toggle="collapse" data-parent="#info-accordion">
+            <img src="assets/images/bell-logo.png">
+          </a>
+        </li>
+        <li>
+          <a [ngClass]="{'active-accordion': activeUInfo}" class="user-logo accordion-toggle" (click)="toggleUInfo()" href="#user-info-bar"
+            data-toggle="collapse" data-parent="#info-accordion">
+            <img src="assets/images/user-logo.png" class="user-logo-img">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="side-menu-bar" class="panel-collapse collapse">
   <ul class="nav">
     <li class="active"><a href="#">
@@ -97,13 +86,8 @@
                 Administration
               </a>
     </li>
-
   </ul>
 </div>
-
-
-
-
 <div id="user-info-bar" class="panel-collapse collapse">
   <ul class="nav">
     <li class="active"><a href="#">
@@ -136,7 +120,6 @@
     </li>
   </ul>
 </div>
-
 <div id="alert-info-bar" class="panel-collapse collapse">
   <ul class="nav">
     <li class="active"><a href="#">
